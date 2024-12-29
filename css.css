@@ -15,7 +15,7 @@ body{
     src: url('Fuentes/Love\ Twist.ttf') format('opentype');
 }
 @font-face {
-    font-family: 'maquina';
+    font-family: 'texto';
     src: url('../Fuentes/WatermelonSugar.ttf') format('opentype');
 }
 
@@ -41,7 +41,7 @@ h1 {
 
 .inicio h2 {
     color: black;
-    font-family: 'maquina', sans-serif;
+    font-family: 'texto';
     overflow: hidden; /* Para ocultar el texto excedente */
     white-space: nowrap; /* Para que el texto no se envuelva */
     border-right: 0.15em solid black; /* Añade el cursor de tipo máquina de escribir */
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2{
-    font-family: 'maquina', sans-serif;
+    font-family: 'texto';
 
 }
 
