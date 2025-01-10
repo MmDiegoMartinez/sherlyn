@@ -16,7 +16,7 @@ body{
 
 @font-face {
     font-family: 'texto';
-    src: url('../Fuentes/Fragmentcore.otf') format('opentype');
+    src: url('../Fuentes/WatermelonSugar.ttf') format('opentype');
 }
 
 h1 {
@@ -29,6 +29,7 @@ h1 {
     font-weight: bold;
     padding: 20px;
 }
+
 h2,h3 {
     text-align: center;
     background-color: #FFD1DC; /* Color de fondo */

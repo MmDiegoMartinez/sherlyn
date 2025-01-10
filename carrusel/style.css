@@ -14,6 +14,44 @@ body {
     background: linear-gradient(to right, #FDBCCB, #FFD1DC);
     padding: 20px; 
 }
+@font-face {
+    font-family: 'titulos';
+    src: url('Fuentes/Love\ Twist.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'maquina';
+    src: url('../Fuentes/WatermelonSugar.ttf') format('opentype');
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: "titulos";
+    font-size: 60px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    font-weight: bold;
+    padding: 20px;
+}
+nav ul{
+    background-color: #FF4081;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+   
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color:  #FFD1DC;
+}
+
 
 .container-carousel {
     position: relative;
