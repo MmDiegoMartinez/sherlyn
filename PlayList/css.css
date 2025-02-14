@@ -1,0 +1,203 @@
+
+
+* {
+    /*Parametros generales*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ffffff;
+}
+@font-face {
+    font-family: 'titulos';
+    src: url('../Fuentes/Love\ Twist.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url('../Fuentes/WatermelonSugar.ttf') format('opentype');
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: "titulos", cursive, sans-serif;
+    font-size: 60px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    font-weight: bold;
+    padding: 20px;
+}
+
+h2,h3 {
+    text-align: center;
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: "texto";
+    font-size: 25px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    font-weight: bold;
+    padding: 5px;
+}
+h3 {
+  
+    font-size: 22px; /* Tamaño de fuente */
+    
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: #FFD1DC; /* Color de fondo */
+    color: #FF4081; /* Color de texto */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    font-size: 15px; /* Tamaño de fuente */
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    border-top: 5px solid #FF85AB; /* Borde superior */
+}
+nav ul{
+    background-color: #FF4081;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+   
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color:  #FFD1DC;
+}
+
+
+ .contenedor3{
+    
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    width: 1300px; 
+    grid-template-columns: 33.3% 33.3% 33.3% ; 
+    grid-template-rows: 600px 600px 600px 600px 600px 600px 600px 600px;
+    margin: 0 auto;
+ }
+
+
+
+
+ .parte {
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    font-weight: bold;
+    padding: 22px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Utilizamos flexbox */
+    flex-direction: column; /* Columnas */
+    
+}
+.parte * {
+    max-width: 100%; /* Para asegurar que los elementos no excedan el ancho de .parte */
+    max-height: 100%; /* Para asegurar que los elementos no excedan el alto de .parte */
+    overflow: hidden; /* Para ocultar cualquier contenido que exceda los límites */
+}
+
+p {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 0.5px 0.5px black;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+  
+    margin-bottom: 20px;
+}
+.music {
+    background-color: #FEE7E6; /* Color de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto;
+    
+}
+
+.music audio {
+    width: 100%; /* Ancho completo */
+    
+}
+
+.music audio::-webkit-media-controls-panel {
+    background-color: #FEE7E6; /* Color de fondo para los controles */
+    border-radius: 10px; /* Bordes redondeados para los controles */
+}
+
+.music audio::-webkit-media-controls-play-button,
+.music audio::-webkit-media-controls-pause-button {
+    color: #FF4081; /* Color de los botones de reproducción/pausa */
+    
+}
+
+ @media screen and (max-width:992px) {
+
+    .contenedor {
+        width: auto;
+    }
+    .contenedor3{
+    
+       
+        width: 425px; 
+        grid-template-columns: 95% ; 
+        grid-template-rows: 600px 600px 600px 600px 600px 600px 600px 600px;
+        padding: 35px;
+        
+     }
+     h1 {
+       
+        font-size: 35px; /* Tamaño de fuente */
+        
+    }
+    h3,
+    h2{
+        font-size: 15px; /* Tamaño de fuente */
+
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .contenedor2 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:468px) {
+
+    .contenedor2  {
+        width: 100%;
+    }
+
+}
+
+
+
+ 
+

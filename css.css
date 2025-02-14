@@ -1,0 +1,211 @@
+
+
+* {
+    /*Parametros generales*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ffffff;
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('Fuentes/Love\ Twist.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'maquina';
+    src: url('Fuentes/WatermelonSugar.ttf') format('opentype');
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: "titulos";
+    font-size: 60px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    font-weight: bold;
+    padding: 20px;
+}
+.inicio{
+    place-items: center;
+    padding: 15px;
+    text-align: justify;
+}
+
+.inicio h2 {
+    color: black;
+    font-family: 'maquina', sans-serif;
+    overflow: hidden; /* Para ocultar el texto excedente */
+    white-space: nowrap; /* Para que el texto no se envuelva */
+    border-right: 0.15em solid black; /* Añade el cursor de tipo máquina de escribir */
+    animation: blinkCursor 0.7s steps(1) infinite normal;
+    height: 1em; 
+    font-size: 30px;
+}
+
+h2{
+    font-family: 'maquina', sans-serif;
+
+}
+
+nav ul{
+    background-color: #FF4081;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+   
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color:  #FFD1DC;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: #FFD1DC; /* Color de fondo */
+    color: #FF4081; /* Color de texto */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    font-size: 15px; /* Tamaño de fuente */
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    border-top: 5px solid #FF85AB; /* Borde superior */
+}
+
+
+
+.controls{
+    width: 75%;
+    background-color: #e9e9e9 ;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #072146;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    
+}
+
+
+ .contenedor3{
+    
+    margin: 10px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 250px 250px;
+ }
+
+ .bontons{
+    width: 40%;
+    background-color: #237ABA;
+    padding: 8px;
+    font-size: 15px;
+    margin: 16px 0;
+    color: #ffffff;
+   
+ }
+ .parte {
+    background-color: #FFD1DC; /* Color de fondo */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+    font-weight: bold;
+    padding: 22px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 20px; /* Tamaño de fuente */
+    color: #FF4081; /* Color de texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.contenedor4 {
+    display: inline-block;
+   
+}
+.contenedor4:hover {
+    background-color: #FF85AB; /* Color de fondo al pasar el mouse */
+}
+
+
+p {
+    color: #FF4081;
+    font-family: 'maquina', sans-serif;
+
+    text-shadow: 0.5px 0.5px black;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+  
+    margin-bottom: 20px;
+}
+
+
+
+ @media screen and (max-width:992px) {
+
+    .contenedor {
+        width: auto;
+    }
+    h1 {
+       
+        font-size: 35px; /* Tamaño de fuente */
+        
+    }
+    h2 {
+       
+        font-size: 20px; /* Tamaño de fuente */
+        
+    }
+
+    .inicio {
+        padding: 14px; 
+        text-align:center;
+    }
+    .inicio h2 {
+        font-family: 'maquina', sans-serif;
+        font-size: 17px; 
+    }
+    .contenedor3{
+    
+        margin: 1px;
+        padding: 5px;
+       
+     }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .contenedor2 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:468px) {
+
+    .contenedor2  {
+        width: 100%;
+    }
+
+}
+
+
+
+ 
+

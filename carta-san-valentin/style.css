@@ -1,0 +1,229 @@
+/* Reset CSS */
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Estilos generales */
+body {
+  background-color: #FFD1DC;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-letter {
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 100px solid #fe3334;
+  border-bottom: 100px solid transparent;
+  transition: transform .75s;
+  transform-origin: top;
+}
+p{
+  font-family: "maquina";
+}
+.paper {
+  position: absolute;
+  padding: 1.5rem;
+  line-height: 2rem;
+  right: 5px;
+  z-index: -1;
+  background: white;
+  width: 390px;
+  height: 180px;
+  transition: all .75s;
+
+}
+
+.letter {
+  border-left: 200px solid #ff989e;
+  border-right: 200px solid #ff989e;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #ff858a;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.options button {
+  color: #ff3234;
+  font-weight: 600;
+  border-radius: 3px;
+  background: #fad7df;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fe3334;
+  cursor: pointer;
+}
+
+.options button:hover {
+  background: #ff989e;
+  color: white;
+}
+
+.open-cover {
+  transform: rotatex(180deg);
+}
+
+.open-paper {
+  animation: openPaper .5s forwards;
+}
+
+@keyframes openPaper {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -120px;
+  }
+}
+
+.close-paper {
+  animation: closePaper .5s forwards;
+}
+
+@keyframes closePaper {
+  0% {
+    top: -120px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.heart {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #fe3334;
+  animation: crecer 1s forwards;
+}
+@font-face {
+  font-family: 'maquina';
+  src: url('../Fuentes/WatermelonSugar.ttf') format('opentype');
+}
+
+@keyframes crecer {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 3;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 75px solid #fe3334;
+    border-bottom: 75px solid transparent;
+  }
+  .letter {
+    border-left: 150px solid #ff989e;
+    border-right: 150px solid #ff989e;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid #ff858a;
+  }
+  .paper {
+   font-size: 10px;
+    padding: 0rem;
+    line-height: 1.5rem;
+    width: 230px;
+    height: 103px;
+  }
+  .options {
+    gap: 1rem;
+  }
+  .heart{
+    top: 20%;
+    left: 60%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cover {
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 60px solid #fe3334;
+    border-bottom: 60px solid transparent;
+  }
+  .letter {
+    border-left: 120px solid #ff989e;
+    border-right: 120px solid #ff989e;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid #ff858a;
+  }
+  .paper {
+    font-size: 10px;
+    padding: 0rem;
+    line-height: 1.5rem;
+    width: 230px;
+    height: 103px;
+  }
+  .options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .options button {
+    width: 100%;
+  }
+  .heart{
+    top: 20%;
+    left: 60%;
+  }
+}
